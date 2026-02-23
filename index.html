@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+  <div class="score-board__container">
+   <h2 class="score-board__title">Tic Tac Toe</h2>
+   <div class="score-board">
+    <div class="score-board__player score-board__player--x">
+     <h2 class="score-board__title">Player X</h2>
+     <p class="score-board__score" id="scoreX">0</p>
+    </div>
+    <div class="score-board__player score-board__player--o">
+     <h2 class="score-board__title">Player O</h2>
+     <p class="score-board__score" id="scoreO">0</p>
+    </div>
+   </div>
+   <div class="board-banner" id="boardBanner" hidden>
+    <span id="boardMessage"></span>
+   </div>
+   <div class="score-board__indicator--container" id="turnIndicator">
+    <p class="score-board__indicator--turn" id="currentPlayer">It's Team X's Turn</p>
+   </div>
+   <div class="board">
+    <button class="board__cell" data-index="0" data-testid="cell-0"></button>
+    <button class="board__cell" data-index="1" data-testid="cell-1"></button>
+    <button class="board__cell" data-index="2" data-testid="cell-2"></button>
+    <button class="board__cell" data-index="3" data-testid="cell-3"></button>
+    <button class="board__cell" data-index="4" data-testid="cell-4"></button>
+    <button class="board__cell" data-index="5" data-testid="cell-5"></button>
+    <button class="board__cell" data-index="6" data-testid="cell-6"></button>
+    <button class="board__cell" data-index="7" data-testid="cell-7"></button>
+    <button class="board__cell" data-index="8" data-testid="cell-8"></button>
+   </div>
+  </div>
+  <div class="score-board__btn-container">
+    <button class="score-board__btn" id="resetBtn">Reset Game</button>
+    <button class="score-board__btn" id="anotherGameBtn">Play Again</button>
+    <button class="score-board__btn" id="rematchBtn">Rematch</button>
+  </div>
+ </div>
+ <script src="game.js"></script>
+</body>
+</html>
